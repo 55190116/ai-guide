@@ -86,9 +86,27 @@ Cline 最大的优势是 **跨平台支持**，不仅支持 VS Code，还支持 
 
 
 
-## 三、其他值得关注的 AI 插件
+## 三、AI 编程助手 IDE 插件
 
-除了 Cline，还有一些其他的 AI 插件也值得了解。
+除了 Cline，还有一些其他的 AI 编程助手 IDE 插件也值得了解。
+
+
+
+### Claude Code 官方扩展
+
+Claude Code 是 Anthropic 推出的 AI 编程助手，原本是独立的命令行工具。而 [Claude Code VS Code 扩展](https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously) 能让你在代码编辑器中直接使用 Claude Code，不用额外打开终端。
+
+这个扩展的优点是提供了图形界面，你可以通过侧边栏面板和 Claude 对话，能够灵活输入文字。
+
+![](https://pic.yupi.icu/1/image-20260116124614180.png)
+
+当 AI 修改代码时，你能在编辑器里实时看到变化，并且自动显示 diff 对比，让你清楚地知道 AI 改了哪些地方。
+
+![](https://pic.yupi.icu/1/image-20260116124700221-20260118135011240.png)
+
+我经常用它来重构代码、修复 Bug、添加新功能。它还支持多会话并行，也就是说你可以同时让多个 Claude 代理处理不同的任务，比如一个负责前端，一个负责后端，大大提高开发效率。
+
+![](https://pic.yupi.icu/1/image-20260116124928547.png)
 
 
 
@@ -126,14 +144,6 @@ Cline 最大的优势是 **跨平台支持**，不仅支持 VS Code，还支持 
 
 
 
-### Supermaven
-
-[Supermaven](https://supermaven.com/) 是一个专注于代码补全的插件，最大的特点是 100 万 Token 的上下文窗口，补全速度极快，准确度也很高。
-
-![](https://pic.yupi.icu/1/image-20260108230146505.png)
-
-
-
 ### Amazon Q Developer
 
 [Amazon Q Developer](https://aws.amazon.com/q/developer/)（原名 CodeWhisperer）是亚马逊推出的 AI 编程助手。
@@ -142,7 +152,65 @@ Cline 最大的优势是 **跨平台支持**，不仅支持 VS Code，还支持 
 
 
 
-## 四、怎么选择 AI IDE 插件？
+## 四、IDE 扩展插件
+
+除了 AI 编程助手插件，还有一些实用的 IDE 扩展插件。
+
+这些插件虽然不是 AI 工具，但配合 AI 编程使用，能让你的开发效率更上一层楼。
+
+
+
+### GitLens
+
+GitLens 能让你更直观地查看 Git 代码的修改历史，把鼠标放到任意代码行上就能看到这行代码的作者、提交时间等信息。
+
+![](https://pic.yupi.icu/1/image-20260116125445257.png)
+
+
+
+### Office Viewer
+
+Office Viewer 能在编辑器里直接预览和编辑各种文档，包括 Markdown、Excel、Word、PDF 等，不用来回切换窗口。
+
+![](https://pic.yupi.icu/1/image-20260116130527681.png)
+
+
+
+### ESLint 和 Prettier
+
+ESLint 是代码质量检查工具，Prettier 是代码格式化工具。这两个插件能帮你保持代码规范，避免 AI 生成的代码出现格式问题。
+
+![](https://pic.yupi.icu/1/image-20260116131356553.png)
+
+
+
+### Error Lens
+
+Error Lens 能让错误信息直接高亮显示在代码行尾，一眼就能看到哪里有问题。
+
+![](https://pic.yupi.icu/1/image-20260116140619858.png)
+
+
+
+### Console Ninja
+
+Console Ninja 能让你在编辑器里直接看到代码的运行结果，不用频繁切换到浏览器控制台。
+
+![](https://pic.yupi.icu/1/image-20260116141109420.png)
+
+
+
+### Supermaven
+
+[Supermaven](https://supermaven.com/) 是一个专注于代码补全的插件，最大的特点是 100 万 Token 的上下文窗口，补全速度极快，准确度也很高。
+
+![](https://pic.yupi.icu/1/image-20260108230146505.png)
+
+
+
+
+
+## 五、怎么选择 AI IDE 插件？
 
 - 如果想要最强大的功能（智能体、多文件编辑），选 Cline。它支持 VS Code 和 JetBrains，完全免费，功能接近 Cursor。
 - 如果主要需要代码补全，选 GitHub Copilot。它最成熟稳定，代码补全质量最高，而且跨平台支持。
