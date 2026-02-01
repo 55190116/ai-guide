@@ -318,7 +318,18 @@ ReAct（Reasoning and Acting）是一种让 AI 智能体交替进行推理和行
 
 ![](https://pic.yupi.icu/1/1746590338968-0240c12b-2956-47f4-b8ff-5b5f831221f6.png)
 
-在 Vibe Coding 中，工具调用让 AI 从 "只会说" 变成 "能动手"。比如 Cursor 的 Agent 模式就是通过工具调用来修改你的代码文件的。
+工具调用的工作流程分为 4 步：
+
+1. 识别需求：AI 判断当前任务需要使用工具
+2. 选择工具：从可用工具中选择合适的
+3. 执行调用：用正确的参数调用工具
+4. 整合结果：将工具返回的结果融入回答
+
+![](https://pic.yupi.icu/1/%E5%B7%A5%E5%85%B7%E8%B0%83%E7%94%A8%E6%B5%81%E7%A8%8B.png)
+
+需要注意的是，AI 模型本身并不直接执行工具，而是生成 “我想调用这个工具，参数是这些” 的指令，由外部程序执行后把结果返回给 AI。
+
+在 Vibe Coding 中，工具调用让 AI 从 "只会说" 变成 "能动手"。比如 Cursor 的 Agent 模式就是通过工具调用来读取文件、修改代码、运行命令的。
 
 
 
@@ -340,6 +351,8 @@ Skills 的核心设计是 **渐进式披露**：AI 只在需要时才加载相�
 
 ![](https://pic.yupi.icu/1/agent%20skills%20bundling.jpeg)
 
+💡 想要发现更多好用的 Agent Skills？可以访问 [鱼皮 AI 导航 - Skills 大全](https://ai.codefather.cn/skills)，持续更新优质技能，释放 AI 执行潜力。
+
 
 
 ### A2A（Agent-to-Agent）
@@ -351,6 +364,78 @@ A2A（Agent-to-Agent）是指 AI 智能体之间相互通信和协作的协议�
 A2A 协议让不同的 AI 智能体能够组成团队，分工合作完成复杂任务。
 
 ![](https://pic.yupi.icu/1/a2a-agent.png)
+
+
+
+### BMAD 敏捷 AI 开发方法
+
+[BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD)（Breakthrough Method of Agile AI-Driven Development，突破性敏捷 AI 驱动开发方法）是一套系统化的 AI 智能体开发框架，旨在将原本混乱的 AI 编程过程变得结构化、可复用。
+
+BMAD 使用 **角色化智能体** 的方式组织开发流程，每个智能体扮演特定角色：
+
+- Analyst Agent（分析师）：创建项目简报，包含市场分析和用户画像
+- PM Agent（产品经理）：将简报转化为详细的产品需求文档（PRD）
+- Architect Agent（架构师）：设计技术实现方案和系统架构
+
+BMAD 中的智能体分为两种类型：
+
+- Simple Agents（简单智能体）：单文件、自包含，适合代码审查、文档生成等聚焦任务
+- Expert Agents（专家智能体）：具有跨会话持久记忆，配有专属文件夹存放资源，适合复杂的多步骤工作流
+
+每个智能体都有标准化的组成部分：人设（角色、身份、沟通风格、原则）、能力列表、交互菜单，以及可选的关键行动。
+
+BMAD 在 GitHub 上获得了几万+ Star，说明这种结构化的 AI 开发方法正在被越来越多的开发者认可。
+
+![](https://pic.yupi.icu/1/image-20260201143945594.png)
+
+
+
+
+### Browser Use 浏览器使用
+
+Browser Use（浏览器使用）是让 AI 智能体能够自动操控网页浏览器的技术能力。通过 Browser Use，AI 可以像人类一样浏览网页、点击按钮、填写表单、提取数据。
+
+Browser Use 的典型应用场景：
+
+- 自动化研究：让 AI 在多个网站上搜索、整理信息
+- 数据采集：从网页中提取结构化数据
+- 表单填写：自动完成繁琐的在线表单
+- 跨平台操作：在不同网站间完成多步骤任务
+
+比较知名的开源项目是 [Browser-Use](https://github.com/browser-use/browser-use)，支持通过 Python 调用多种大模型来控制浏览器。此外，Cursor、Claude Code 等主流 AI 编程工具也内置了 Browser Use 能力，可以在开发过程中自动打开浏览器预览效果、执行测试等操作。
+
+![](https://pic.yupi.icu/1/image-20251030220841383.png)
+
+Browser Use 的一个关键优势是，AI 可以利用你现有的浏览器会话和登录状态，无需为每个网站单独开发 API 集成。也就是说，AI 能够访问那些没有公开 API 的网站，大大扩展了自动化的应用范围。
+
+
+
+### Computer Use 计算机使用
+
+Computer Use（计算机使用）是 Anthropic 公司在 2024 年推出的 AI 能力，让 Claude 能够像人类一样操作整个计算机桌面。
+
+和 Browser Use 只能操作浏览器不同，Computer Use 可以操作任何桌面应用程序，比如：
+
+- 查看屏幕截图，理解界面元素
+- 移动鼠标光标，点击按钮
+- 使用键盘输入文字
+- 执行命令行操作
+
+Computer Use 的工作原理是一个持续的反馈循环：
+
+1. 截图分析：AI 捕获并分析当前屏幕
+2. 决策规划：根据任务目标确定下一步操作
+3. 执行操作：发送鼠标/键盘输入
+4. 观察结果：检查操作效果，调整策略
+
+💡 为了安全起见，Computer Use 通常在虚拟机或容器中运行，不会直接控制你的真实电脑。
+
+Computer Use 代表了 AI 从 "只能生成文字" 到 "能够操作软件" 的重大跨越，彻底改变人机交互方式。
+
+基于 Computer Use 技术，Anthropic 在 2026 年推出了 [Claude Cowork](https://claude.com/product/cowork)，这是一个桌面端 AI 助手，可以直接访问你电脑上的文件和文件夹，帮你整理下载目录、从截图中提取数据到表格、准备品牌报告等日常办公任务。
+
+![](https://pic.yupi.icu/1/975b77da-9bb4-436e-bdf4-cd6318fd593c.png)
+
 
 
 
@@ -387,11 +472,101 @@ A2A 协议让不同的 AI 智能体能够组成团队，分工合作完成复杂
 
 ### 规则文件
 
-规则文件（Rules File）是放在项目根目录的配置文件，用来告诉 AI 你的项目规范、技术栈、代码风格等信息。
+规则文件（Rules File）是放在项目中的配置文件，用来告诉 AI 你的项目规范、技术栈、代码风格等信息。有了规则文件，AI 每次生成代码时都可以参考这些规则，生成的代码更符合你的项目风格，省去了反复强调的麻烦。
 
-在 Cursor 中，这个文件叫 `.cursorrules`；在 Claude Code 中，这个文件叫 `CLAUDE.md`。（注意，随着工具版本的更新，这些文件的名称和标准可能会发生改变）
 
-有了规则文件，AI 每次生成代码时都会参考这些规则，生成的代码更符合你的项目风格，省去了反复强调的麻烦。
+不同 AI 编程工具使用不同的规则文件格式：
+
+- Cursor：早期使用 `.cursorrules` 单文件格式，现在推荐使用 `.cursor/rules/*.mdc` 多文件格式
+- Claude Code：使用 `CLAUDE.md` 文件
+- GitHub Copilot：使用 `.github/copilot-instructions.md` 文件
+
+以 Cursor 为例，现代的 `.mdc` 规则文件支持 YAML 元数据，可以指定规则的适用范围：
+
+```yaml
+---
+description: React 组件开发规范
+globs: src/components/**/*.tsx
+alwaysApply: false
+---
+# React 规范
+- 使用函数式组件
+- 优先使用 hooks
+```
+
+规则文件的激活方式有多种，比如：
+
+- 始终生效：设置 `alwaysApply: true`
+- 模式匹配：当引用匹配 `globs` 的文件时自动激活
+- 手动调用：在对话中用 `@规则名` 引用
+- AI 自主决定：AI 根据任务相关性自动加载
+
+
+💡 注意，随着工具版本的更新，这些文件的名称和标准可能会发生改变，一切以工具官方文档为主。
+
+
+
+### AGENTS.md
+
+[AGENTS.md](https://agents.md/) 是一种开放的文件格式，专门用于给 AI 编程智能体提供项目指令。
+
+![](https://pic.yupi.icu/1/image-20260201145003244.png)
+
+传统的 README.md 是写给人看的，主要介绍项目是什么、怎么用。而 AGENTS.md 是写给 AI 看的，包含 AI 工作时需要的技术细节：
+
+- 项目的构建和启动命令
+- 测试运行方式
+- 代码风格和规范
+- 项目结构说明
+
+一个典型的 AGENTS.md 文件大概长这样：
+
+```markdown
+# 项目设置
+- 安装依赖：npm install
+- 启动开发：npm run dev
+- 运行测试：npm test
+
+# 代码规范
+- 使用 TypeScript 严格模式
+- 组件文件使用 PascalCase 命名
+- 工具函数使用 camelCase 命名
+```
+
+AGENTS.md 的优势在于它是一个开放标准，被数万个开源项目采用。当你使用支持该标准的 AI 编程工具（如 Claude Code、OpenAI Codex、Cursor、GitHub Copilot 等）时，AI 会自动识别项目根目录下的 AGENTS.md 文件，并将其中的指令发送给 AI，无需你手动引用。
+
+
+
+### SDD 规范驱动开发
+
+SDD（Spec-Driven Development，规范驱动开发）是 AI 时代的一种新型开发方法论，强调在编码之前先创建精确、机器可读的规范文档。
+
+传统开发流程是：想到什么写什么，边写边改，最后再补文档。这样容易导致需求不清晰、代码和文档对不上。
+
+而 SDD 的思路正好相反：**先把需求写成规范文档，并且把规范文档当作代码的唯一真相来源**。
+
+你可以把规范文档理解为 “项目宪法”，它包含了详细的需求描述、系统设计和接口定义。AI 必须严格遵守这些条文来生成代码，确保产出完全符合预期。
+
+![](https://pic.yupi.icu/1/%25E6%25BC%25AB%25E7%2594%25BB%25E5%259B%25BE4%25E5%25A4%25A7.jpeg)
+
+为什么 SDD 越来越受重视？
+
+因为 AI 生成代码的质量直接取决于上下文的清晰度，而不仅仅是依靠提示词技巧。一个清晰的规范文档能比任何 Prompt 黑魔法更有效地减少错误。
+
+SDD 的典型工作流程：
+
+1. Constitution（制定准则）：定义项目的基本原则、代码规范、性能标准
+2. Specify（编写规范）：描述要做什么功能、为什么做、用户需求是什么
+3. Clarify（澄清疑问）：让 AI 提出结构化问题，明确边界情况和错误处理
+4. Plan（制定方案）：确定技术栈、系统架构、数据模型、API 接口
+5. Tasks（拆解任务）：把计划拆解成可执行的任务列表，标注依赖关系和优先级
+6. Implement（执行实现）：AI 按照任务列表生成代码，人类验证
+
+![](https://pic.yupi.icu/1/%2525E6%2525BC%2525AB%2525E7%252594%2525BB%2525E5%25259B%2525BE5%2525E5%2525A4%2525A7.jpeg)
+
+2025 年 9 月，GitHub 发布了开源的 [Spec Kit](https://github.com/github/spec-kit) 工具包，帮助开发者在 AI 编程中实践 SDD 方法论。它支持 Claude Code、GitHub Copilot 等主流编程工具，通过一套斜杠命令引导你完成上述流程。
+
+![](https://pic.yupi.icu/1/image-20260116164612533.png)
 
 
 
@@ -442,9 +617,15 @@ MCP（Model Context Protocol）是 Anthropic 在 2024 年底推出的开放标�
 
 ![](https://pic.yupi.icu/1/1746710765234-c974bda8-666e-45b3-adc4-ace97cbb8c0a.png)
 
-在 Vibe Coding 中，MCP 让 AI 能够更方便地获取项目上下文，提高代码生成的准确性。
+MCP 的核心价值在于 **标准化**。开发者不需要为每个 AI 工具单独开发连接器，只需要按照 MCP 标准开发一次，就能被所有支持 MCP 的 AI 工具使用。目前 Claude Code、Cursor、Windsurf 等主流 AI 编程工具，以及各种网页 AI Agent 应用都已经支持 MCP 协议。
 
 ![](https://pic.yupi.icu/1/1746677838632-9278e62b-c850-4d3c-a835-297ccbe2061a.png)
+
+在 Vibe Coding 中，MCP 让 AI 能够连接更多外部工具和数据源，大大扩展了 AI 的能力边界。比如通过 Figma MCP，AI 可以直接读取设计稿并生成对应的网页代码；通过 GitHub MCP，AI 可以直接操作代码仓库、创建 PR；通过数据库 MCP，AI 可以查询和分析业务数据。
+
+![](https://pic.yupi.icu/1/image-20260116123701822.png)
+
+💡 想要发现更多好用的 MCP 服务？可以访问 [鱼皮 AI 导航 - MCP 大全](https://ai.codefather.cn/mcp)，持续更新优质 MCP，帮你重塑 AI 工作流。
 
 
 

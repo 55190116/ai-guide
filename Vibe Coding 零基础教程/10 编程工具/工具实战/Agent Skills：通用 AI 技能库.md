@@ -351,9 +351,13 @@ AI 不需要把所有规则都背下来，而是用到哪个查哪个，这就�
 
 目前 [Anthropic 官方技能仓库](https://github.com/anthropics/skills) 已经提供了丰富的技能集合，涵盖编程相关的前端设计、网页测试，还有办公相关的 PPT 制作、Excel 处理、Word 文档、PDF 生成等各个方面。
 
-Skills 的社区也非常活跃，你可以在 [Claude Skills Hub 市场](https://www.claudeskill.site/zh/skills)、开源的 [Awesome Claude Skills](https://github.com/ComposioHQ/awesome-claude-skills) 等地方找到很多现成的技能。
+Skills 的社区也非常活跃，你可以在以下地方找到很多现成的技能：
 
-![](https://pic.yupi.icu/1/image-20260116152552700.png)
+- ⭐️ [鱼皮 AI 导航 - Skills 大全](https://ai.codefather.cn/skills)：持续更新优质技能，释放 AI 执行潜力
+- [Claude Skills Hub 市场](https://www.claudeskill.site/zh/skills)：社区技能市场
+- [Awesome Claude Skills](https://github.com/ComposioHQ/awesome-claude-skills)：开源技能列表
+
+![](https://pic.yupi.icu/1/image-20260201150711260.png)
 
 
 
