@@ -24,7 +24,7 @@
 
 ## 🌐 Translations
 
-[繁體中文](./translations/zh-TW/README.md)
+[English](./translations/en/README.md) | [繁體中文](./translations/zh-TW/README.md)
 
 ---
 
