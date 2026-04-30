@@ -335,17 +335,27 @@ Harness Engineering（驾驭工程）是 2026 年兴起的 AI 工程新范式，
 
 Harness 这个词本意是 “马具”，就像缰绳和马鞍用来引导强大但难以预测的马匹一样，Harness Engineering 就是围绕 AI 编程智能体搭建的整套 “运行环境”，确保 AI 能按照你的预期工作。
 
-Harness Engineering 包含三大核心支柱：
-
-1. 上下文工程：确保 AI 在正确的时间获得正确的信息，包括代码库文档、架构规范、AGENTS.md 文件、测试结果等
-2. 架构约束：通过代码规范检查器、自动化测试等机制，强制规定 AI 必须遵守的规则，明确的边界能让 AI 更快地收敛到正确的解决方案
-3. 熵管理：定期清理 AI 生成代码中积累的问题，比如过时文档、命名偏差、死代码等
-
-![](https://pic.yupi.icu/1/harness%20engineering%20%E5%9B%BE%E8%A7%A3%E5%A4%A7.jpeg)
+![](https://pic.yupi.icu/1/2_harness_horse.png)
 
 为什么这个概念越来越重要呢？
 
 因为在 AI 编程时代，**模型本身已经是通用商品，真正的竞争力在于你围绕模型搭建的工程体系**。同一个大模型，在不同的 Harness 环境下，代码质量可能天差地别。程序员的角色正在从 “自己写代码” 转变为 “设计让 AI 可靠写代码的系统”。
+
+![](https://pic.yupi.icu/1/8_agent_queals.png)
+
+从发展路径来看，Harness Engineering 是在提示词工程和上下文工程基础上的进一步演进。提示词工程关注「怎么给 AI 下指令」，上下文工程关注「怎么给 AI 提供信息」，而 Harness Engineering 关注的是「怎么让 AI 持续靠谱地干完一整件事」，三者是层层包含的关系。
+
+![](https://pic.yupi.icu/1/7_harness_layers.png)
+
+Harness 的核心模块包括：
+
+- 上下文架构（让 AI 了解项目背景和规矩）
+- 执行能力（给 AI 装上工具和 MCP）
+- 任务编排（Plan Mode、SubAgents 并行执行等）
+- 反馈机制（Linter、自动化测试、Browser Use）
+- 架构护栏（防止代码越改越乱）
+
+![](https://pic.yupi.icu/1/20_harness_modules.png)
 
 
 
@@ -943,11 +953,32 @@ RAG（Retrieval-Augmented Generation 检索增强生成）是一种让 AI 能够
 
 普通的 AI 只能依赖训练时学到的知识，而这些知识可能已经过时了。RAG 能让 AI 在回答问题时，先从你的文档、代码库、知识库中检索相关信息，然后基于这些信息生成回答。
 
-这对于 Vibe Coding 特别有用，因为 AI 可以参考你项目中的已有代码，生成风格一致的新代码。
+![](https://pic.yupi.icu/1/1776650476421-3bfb3c26-575d-4cc4-9538-f74a4589b42d-20260430230436685.png)
+
+这对于企业中的 Vibe Coding 特别有用，因为 AI 可以参考你项目中的已有代码，生成风格一致的新代码。
 
 RAG 检索增强生成的工作流程如下图所示，做 AI 应用开发的程序员朋友们可以深入了解一下：
 
 ![](https://pic.yupi.icu/1/1745810809620-15c36bc0-5130-47fc-aaca-7d2a6ce6e3ce.png)
+
+在实际工程中，RAG 已经演化出了很多进阶方案。
+
+![](https://pic.yupi.icu/1/1776651602499-afc9fc4b-6105-4b96-a3cd-a6681bf69480-20260430230542027.png)
+
+比如：
+
+- Multi-Query RAG，用多种问法分别检索再合并结果。
+- HyDE，让 AI 先生成一段假答案再用假答案的向量去检索。
+- Hybrid Search，混合向量搜索和关键词搜索再融合排序。
+- Reranking，在检索后用精排模型重新打分过滤噪声。
+- GraphRAG，把文档变成知识图谱来支持跨文档多跳推理。
+- Agentic RAG，给 Agent 配备一组检索工具，让它来自动调度，根据问题自主决定每一步该怎么做。
+
+还有很多，不同的方案适用于不同场景，可以根据实际需求组合使用。
+
+![](https://pic.yupi.icu/1/1776652755436-d1f52895-b98a-4e33-8c86-6ce0322ace05-20260430230713947.png)
+
+对 RAG 感兴趣的程序员朋友，可以阅读本教程编程学习板块的《AI 编程技术入门指南》，里面有更详细的 RAG 实现方案和选型建议。
 
 
 

@@ -65,6 +65,8 @@
 
 对于想深入学习的同学，可以在完成基础项目后，继续学习《企业项目开发流程》，了解真实的商业项目是如何开发的。或者学习 [鱼皮的原创项目实战教程](https://www.codefather.cn/post/1797431216467001345)，跟着保姆级视频和图文教程做出完整的企业级项目。比如 [AI 万能视频下载总结器](https://www.codefather.cn/course/2027618983506640897)（基于 Cursor，含 Stripe 支付和 SEO/GEO 优化）、[AI 热点监控工具](https://www.codefather.cn/course/2026625439052627970)（基于 GitHub Copilot）和 [GitHub 文档翻译工具](https://www.codefather.cn/course/2014303010343092226)（基于 Cursor）都是很好的 Vibe Coding 实战项目，代码完全开源，零基础也能跟着做出来。
 
+此外，还有用 Cursor 开发的《程序员人格测试 CBTI》（纯前端创意应用）、用 Codex + GPT-5.5 开发的《AI 开源项目学习网站》（全栈 AI 应用）、用 Claude Code + DeepSeek V4 开发的《AI 提肛助手》（前端 AI 应用）等更多有趣的实战项目，涵盖不同的 AI 编程工具和项目类型。
+
 
 
 ## 四、学完这个板块，你能收获什么？
