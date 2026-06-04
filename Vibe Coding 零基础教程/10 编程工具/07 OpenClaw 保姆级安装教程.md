@@ -292,7 +292,7 @@ openclaw onboard --install-daemon
 
 ![](https://pic.yupi.icu/1/image-20260310150731894.png)
 
-当然，你也可以选择其他大模型平台。如果你想了解各模型在 OpenClaw 场景下的实际表现，可以参考 [PinchBench](https://pinchbench.com/) 排行榜，这是一个专门测试大模型做 OpenClaw 任务的评测网站。目前成功率最高的是 Claude Opus 4.6（成功率 82.5%），最便宜的是 Google 的 gemini-2.5-flash-lite（每次任务只要 1 毛钱）。
+当然，你也可以选择其他大模型平台。如果你想了解各模型在 OpenClaw 场景下的实际表现，可以参考 [PinchBench](https://pinchbench.com/) 排行榜，这是一个专门测试大模型做 OpenClaw 任务的评测网站。目前成功率最高的是 Claude Opus 4.8（成功率 82.5%），最便宜的是 Google 的 gemini-2.5-flash-lite（每次任务只要 1 毛钱）。
 
 ![](https://pic.yupi.icu/1/image-20260310164932093.png)
 

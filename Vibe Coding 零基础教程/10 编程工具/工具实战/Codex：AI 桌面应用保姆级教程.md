@@ -18,6 +18,8 @@ Codex 桌面 APP 不仅能帮你写代码，还能直接操作你电脑上的文
 
 干货密集，建议先收藏，找个安静的地方慢慢食用~
 
+⭐️ 本文对应视频版：[https://www.bilibili.com/video/BV1eNGR6rETx](https://www.bilibili.com/video/BV1eNGR6rETx)
+
 ![](https://pic.yupi.icu/1/01_%25E6%259C%25AC%25E6%2596%2587%25E8%25AE%25B2%25E8%25A7%25A3%25E8%25B7%25AF%25E7%25BA%25BF%25E5%2592%258C%25E6%25A8%25A1%25E5%259D%2597%25E5%25A4%25A7%25E7%25BA%25B2%25E5%259B%25BE_compressed_v2.png)
 
 

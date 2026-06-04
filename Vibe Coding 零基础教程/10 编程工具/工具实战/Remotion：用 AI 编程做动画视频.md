@@ -81,7 +81,7 @@ npm run dev
 
 我们不可能自己写代码来做视频，肯定是让 AI 来。
 
-打开一个 AI 编程工具，我这里用的是 VS Code + GitHub Copilot AI 插件，选了最新的模型 Opus 4.6，100 万上下文，还是很牛的。
+打开一个 AI 编程工具，我这里用的是 VS Code + GitHub Copilot AI 插件，选了最新的模型 Claude Opus，100 万上下文，还是很牛的。
 
 ![](https://pic.yupi.icu/1/1770372617235-a5aef8ec-c45d-45fd-9673-e583892d97c3.png)
 
