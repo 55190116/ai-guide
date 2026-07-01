@@ -363,6 +363,28 @@ Harness 的核心模块包括：
 
 
 
+### Loop Engineering 循环工程
+
+Loop Engineering（循环工程）是 2026 年中期兴起的 AI 编程新范式，核心理念是 **设计自动循环系统，让 AI 自主执行、自主验证、自主修复，直到达成目标**。
+
+以前的 AI 编程模式就像开手动挡的车，每一步都靠你自己操作。Loop Engineering 更像自动驾驶，你提前设定好目的地和安全规则，AI 自己执行、自己检查、自己修复，直到任务完成。
+
+![](https://pic.yupi.icu/1/01_Loop_Engineering%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%EF%BC%9A%E4%BD%A0%E8%AE%BE%E8%AE%A1%E7%B3%BB%E7%BB%9F%E8%AE%A9%E5%AE%83%E4%BB%A3%E6%9B%BF%E4%BD%A0%E7%BB%99AI%E4%B8%8B%E6%8C%87%E4%BB%A4_compressed_v1.png)
+
+一个靠谱的 Loop 需要 3 样核心的东西：
+
+- **明确的目标和停止条件**：比如「所有测试通过」就是好的停止条件
+- **反馈闭环**：每轮循环结束后自动检查结果，判断是继续还是停止
+- **状态记忆**：用外部文件（如 PROGRESS.md）记录进度，断了重启不会从零开始
+
+![](https://pic.yupi.icu/1/03_Loop%E7%9A%843%E5%A4%A7%E6%A0%B8%E5%BF%83%E8%A6%81%E7%B4%A0%EF%BC%9A%E7%9B%AE%E6%A0%87%E5%81%9C%E6%AD%A2%E6%9D%A1%E4%BB%B6%E3%80%81%E5%8F%8D%E9%A6%88%E9%97%AD%E7%8E%AF%E3%80%81%E7%8A%B6%E6%80%81%E8%AE%B0%E5%BF%86_compressed_v2.png)
+
+从发展路径来看，Loop Engineering 是在提示词工程、上下文工程和 Harness Engineering 基础上的进一步演进。前面几步让 AI 能在靠谱的环境里干活，Loop 则在这些基础上多加了一层「自动循环 + 反馈闭环」的机制，让你从「一句一句手动提示 AI」的操作者变成「设计循环规则」的管理者。
+
+![](https://pic.yupi.icu/1/04_AI%E7%BC%96%E7%A8%8B%E8%BF%9B%E5%8C%964%E9%98%B6%E6%AE%B5%EF%BC%9APrompt%E2%86%92Context%E2%86%92Harness%E2%86%92Loop_compressed_v3.png)
+
+
+
 ### 多智能体协作
 
 多智能体协作（Multi-Agent）是指多个 AI 智能体分工合作，共同完成复杂任务。

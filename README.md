@@ -13,6 +13,7 @@
   <a href="https://ai.codefather.cn"><img src="https://img.shields.io/badge/🌐 在线阅读-ai.codefather.cn-blue?style=for-the-badge" alt="在线阅读"/></a>
   <a href="https://github.com/liyupi/ai-guide"><img src="https://img.shields.io/github/stars/liyupi/ai-guide?style=for-the-badge&logo=github&color=yellow" alt="GitHub Stars"/></a>
   <a href="https://space.bilibili.com/12890453"><img src="https://img.shields.io/badge/B站-程序员鱼皮-pink?style=for-the-badge&logo=bilibili" alt="B站"/></a>
+  <a href="https://www.bilibili.com/cheese/play/ss475098271"><img src="https://img.shields.io/badge/🎬 视频教程-AI编程实战-orange?style=for-the-badge" alt="视频教程"/></a>
 </p>
 
 
@@ -25,8 +26,6 @@
 ## 🌐 Translations
 
 [English](./translations/en/Vibe%20Coding%20%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/README.md) | [繁體中文](./translations/zh-TW/Vibe%20Coding%20%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/README.md)
-
----
 
 
 
@@ -62,7 +61,19 @@
 
 
 
+### 配套视频教程
+
+如果你更喜欢看视频学习，我还录制了一套《小白都能学的 AI 编程实战》视频课程，哪怕没有任何基础，也能跟着从 0 跑通完整的项目流程，开发出能上线、能商用变现的作品。
+
+> 课程地址：https://www.bilibili.com/cheese/play/ss475098271
+
+![](https://pic.yupi.icu/1/image-20260528190958881.png)
+
+
+
 ### 学习路径推荐
+
+更详细的学习路线可以阅读教程中的《AI 编程学习路线》，下面是快速参考：
 
 **零基础新手：**
 - 第 1 天：读完基础必读，理解 Vibe Coding 并做出第一个作品
@@ -138,12 +149,18 @@ ai-guide/
 ├── 🔥 Vibe Coding 零基础教程/     # 重磅教程，强烈推荐
 │   ├── 00 Vibe Coding 简介
 │   ├── 01 快速上手 Vibe Coding
-│   ├── 10 编程工具/
-│   ├── 20 项目实战/
-│   ├── 30 经验技巧/
-│   ├── 40 编程学习/
-│   ├── 50 产品变现/
-│   └── ...
+│   ├── 02 AI 编程学习路线
+│   ├── 10 编程工具/               # Cursor、Codex、Claude Code 等工具专题
+│   ├── 15 模型动态/               # AI 模型发布测评
+│   ├── 20 项目实战/               # 从 0 到 1 做出产品
+│   ├── 30 经验技巧/               # 效率提升、Harness、Loop 等
+│   ├── 40 编程学习/               # 进阶编程知识
+│   ├── 50 产品变现/               # 盈利模式、SEO、运营
+│   ├── 60 Vibe Coding 资源大全
+│   ├── 65 鱼皮的 AI 编程实战视频课
+│   ├── 70 Vibe Coding 概念大全
+│   ├── 75 AI 大模型原理入门
+│   └── 90 Vibe Coding 常见问题和解决
 ├── AI/
 │   ├── 鱼皮的 AI 指南/            # AI 核心概念、工具、技巧
 │   ├── 关于 DeepSeek/             # DeepSeek 基础知识
