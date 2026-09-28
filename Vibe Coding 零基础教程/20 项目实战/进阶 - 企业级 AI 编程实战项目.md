@@ -196,6 +196,31 @@
 
 
 
+### 全能 AI 修图智能体
+
+基于 Python FastAPI + LangChain + LangGraph + React 19 + Konva 开发的 AI 修图智能体，用自然语言描述修图需求，Agent 自动拆解为多步计划并调用 21 个编辑工具完成修图，覆盖文生图、抠图调色、智能选区、局部消除和替换、图层拆分等场景。这是一套以 AI 智能体驱动复杂应用为核心的全栈项目，带你把「大模型 + 工具调用」落地成一个对标专业修图软件交互体验的完整产品。
+
+适合人群：想系统学习 AI Agent 开发、掌握 LangChain 和 LangGraph 主流框架、补齐 Python + React 全栈和复杂前端交互能力的同学，也可以直接作为毕设。
+
+[👉🏻 点击开始学习](https://www.codefather.cn/course/2099386518517915649)
+
+技术亮点：
+
+- LangGraph 智能体状态图规划多步修图计划
+- ToolRegistry 统一工具注册，UI 和 Agent 共用一套工具
+- Kahn 拓扑排序 + HITL 人机协作确认计划
+- ARQ 异步任务队列 + Redis Pub/Sub + SSE 实时推送
+- SAM 点选分割 + rembg 本地抠图
+- react-konva 专业画布引擎
+- 图层拆分与版本管理
+- Docker 多阶段构建一键部署
+
+
+
+![鱼皮全能 AI 修图智能体项目](https://pic.yupi.icu/pine/image-20260901150955859.png)
+
+
+
 ### 智能协同云图库
 
 基于 Vue 3 + Spring Boot + COS + WebSocket 的企业级智能协同云图库平台。涉及文件存管、内容检索、权限控制、实时协同等企业主流业务场景，技术栈包括 MySQL 分库分表、Redis + Caffeine 多级缓存、COS 对象存储、Sa-Token 权限控制、DDD 领域驱动设计、WebSocket 实时通讯、AI 绘图大模型等。

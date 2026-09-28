@@ -53,9 +53,9 @@
 
 板块中的原创项目实战教程按照项目类型进行了分类，方便你根据兴趣选择：
 
-- **AI 创意应用**：趣味性强、快速上手的入门项目，比如程序员人格测试、AI 塔罗牌占卜、AI 海龟汤游戏、以撒的结合肉鸽网页游戏等
+- **AI 创意应用**：趣味性强、快速上手的入门项目，比如程序员人格测试、AI 塔罗牌占卜、AI 海龟汤游戏、以撒的结合肉鸽网页游戏、AI 桌面换装视频技能等
 - **AI 实用工具**：有实际使用价值的工具类项目，比如 AI 搜索引擎、文档阅读助手、视频下载总结器、热点监控工具、智能 PPT 生成器等
-- **AI 智能体和平台**：涉及 AI Agent、多智能体、复杂架构的项目，比如 AI 编程助手、AI 超级智能体、零代码应用生成平台等（部分标注「进阶」，适合有编程基础的同学）
+- **AI 智能体和平台**：涉及 AI Agent、多智能体、复杂架构的项目，比如 AI 编程助手、AI 修图智能体、AI 超级智能体、零代码应用生成平台等（部分标注「进阶」，适合有编程基础的同学）
 - **AI 跨端应用**：移动端、桌面端、小程序、命令行等非 Web 形态的项目，比如 AI 闯关学习小程序、表情包生成器 APP、桌面 APP 等
 
 
@@ -70,7 +70,7 @@
 
 如果你不知道做什么项目，可以先看看项目灵感大全，里面有 100 个项目创意，总有一个能激发你的兴趣。
 
-对于想深入学习的同学，可以在完成基础项目后，继续学习《企业项目开发流程》，了解真实的商业项目是如何开发的。或者学习 [鱼皮的原创项目实战教程](https://www.codefather.cn/post/1797431216467001345)，跟着保姆级视频和图文教程做出完整的企业级项目。比如 [AI 闯关学习小程序](https://www.codefather.cn/course/2037104890135748610)（基于 GitHub Copilot + Claude Code，含 RAG 知识库和小程序上线）、[AI 万能视频下载总结器](https://www.codefather.cn/course/2027618983506640897)（基于 Cursor，含 Stripe 支付和 SEO/GEO 优化）、[AI 热点监控工具](https://www.codefather.cn/course/2026625439052627970)（基于 GitHub Copilot）、[AI 智能 PPT 生成器](https://www.codefather.cn/course/2091823677833220098)（基于 LangChain + LangGraph，含异步任务编排和原生 PPTX 导出）和 [GitHub 文档翻译工具](https://www.codefather.cn/course/2014303010343092226)（基于 Cursor）都是很好的 Vibe Coding 实战项目，代码完全开源，零基础也能跟着做出来。
+对于想深入学习的同学，可以在完成基础项目后，继续学习《企业项目开发流程》，了解真实的商业项目是如何开发的。或者学习 [鱼皮的原创项目实战教程](https://www.codefather.cn/post/1797431216467001345)，跟着保姆级视频和图文教程做出完整的企业级项目。比如 [AI 闯关学习小程序](https://www.codefather.cn/course/2037104890135748610)（基于 GitHub Copilot + Claude Code，含 RAG 知识库和小程序上线）、[AI 万能视频下载总结器](https://www.codefather.cn/course/2027618983506640897)（基于 Cursor，含 Stripe 支付和 SEO/GEO 优化）、[AI 热点监控工具](https://www.codefather.cn/course/2026625439052627970)（基于 GitHub Copilot）、[AI 智能 PPT 生成器](https://www.codefather.cn/course/2091823677833220098)（基于 LangChain + LangGraph，含异步任务编排和原生 PPTX 导出）、[全能 AI 修图智能体](https://www.codefather.cn/course/2099386518517915649)（基于 LangChain + LangGraph，含 Agent 多步规划和专业画布编辑器）和 [GitHub 文档翻译工具](https://www.codefather.cn/course/2014303010343092226)（基于 Cursor）都是很好的 Vibe Coding 实战项目，代码完全开源，零基础也能跟着做出来。
 
 除了上面这些，本板块的四个项目分类目录中还有很多有趣的实战项目，涵盖 Cursor、Claude Code、Codex、GitHub Copilot、TRAE、EdgeOne Makers 等多种 AI 编程工具，覆盖 Web 应用、桌面 APP、小程序、CLI 工具等各种形态，可以按照自己的兴趣逐个学习。
 

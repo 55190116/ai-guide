@@ -63,7 +63,7 @@
 
 ### 什么是上下文窗口？
 
-回答：上下文窗口是指 AI 模型一次能 “记住” 的内容量，一般用 Token 来衡量。比如 Claude Sonnet 的上下文窗口是 200K Token，大约相当于 15 万个中文字。上下文窗口越大，AI 能处理的代码量就越多，能记住的对话历史就越长。如果你的项目代码很多，选择上下文窗口大的模型会更合适，比如 Claude 全系（Fable 5.1、Opus 5、Sonnet 5）、Gemini 3.8 Flash、DeepSeek V4.1 Flash 和 Kimi K3 都支持 1M Token，GPT-6 Astra 更是有 105 万。不过要注意，窗口大不等于可以随便塞，有些模型（比如 GPT-6 Astra）超过一定输入量之后单价会跳档变贵。
+回答：上下文窗口是指 AI 模型一次能 “记住” 的内容量，一般用 Token 来衡量。比如 Claude Sonnet 的上下文窗口是 200K Token，大约相当于 15 万个中文字。上下文窗口越大，AI 能处理的代码量就越多，能记住的对话历史就越长。如果你的项目代码很多，选择上下文窗口大的模型会更合适，比如 Claude 全系（Opus 5.5、Fable 5.1、Sonnet 5）、Gemini 3.8 Flash、DeepSeek V4.1 Flash 和 Kimi K3 都支持 1M Token，GPT-6 系列更是有 105 万。不过要注意，窗口大不等于可以随便塞，有些模型（比如 GPT-6 Astra 和 Sol）超过一定输入量之后单价会跳档变贵。
 
 
 

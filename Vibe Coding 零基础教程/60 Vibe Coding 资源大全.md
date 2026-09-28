@@ -114,6 +114,10 @@ AI 高速发展，几乎每天都有 “炸裂” 的消息。
 
 ![](https://pic.yupi.icu/yuyi/image-20260320154026284.png)
 
+如果你只想快速搞清楚「现在有哪些模型、谁最强、谁最划算」，还可以看看我用 AI 做的 [AI 大模型世界](https://www.bilibili.com/toy/ai-model-world) 网站。几百个主流模型的能力排名、价格、发布时间线和几十个排行榜都在里面，数据来自第三方评测、自动更新，免费免登录。
+
+![AI 大模型世界排行榜](https://pic.yupi.icu/1/aimodelworld-0926-leaderboard-b9cedcc8.png)
+
 
 
 

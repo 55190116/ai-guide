@@ -82,6 +82,8 @@ npx @deepseek-ai/dsh web
 
 ![](https://pic.yupi.icu/1/image-20260814130332224.png)
 
+如果你连 Node.js 都不想装，现在还可以直接下载 DSH 桌面端安装包，双击就能用，运行环境全都打包好了。具体下载方式和注意事项可以阅读本教程编程工具板块 DeepSeek Harness 目录中的《DeepSeek Harness 桌面端上手教程》。
+
 看到这里，你已经超过了 60% 的同学，接下来我带大家实战体验一下它的能力。
 
 
